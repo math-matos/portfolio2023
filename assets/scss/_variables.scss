@@ -1,0 +1,151 @@
+$font-main: "oswald", sans-serif;
+
+$color-main: #6de2ff;
+$color-black: black;
+$color-gray: #9ca3af;
+$bg-main: rgb(255, 255, 255);
+$bg-secondary: radial-gradient(circle, rgb(234, 251, 255) 0%, rgb(255, 255, 255) 100%);
+$bg-border: #1f1f1f;
+
+$gap-0: 0px;
+$gap-1: 8px;
+$gap-2: 16px;
+$gap-3: 24px;
+$gap-4: 32px;
+$gap-5: 48px;
+$gap-6: 64px;
+$gap-7: 72px;
+$gap-8: 96px;
+$gap-9: 128px;
+
+@mixin responsive-desktop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin responsive-tablet {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin spacing-section() {
+  padding: $gap-8 $gap-5;
+  @include responsive-tablet {
+    padding: $gap-5 $gap-3;
+  }
+}
+
+@mixin flexbox-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flexbox-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-layout() {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@mixin title-section {
+  padding-bottom: $gap-3;
+  color: $color-black;
+  font: {
+    size: 4rem;
+    weight: 500;
+  }
+}
+
+@mixin hover-link() {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background: linear-gradient(270deg, #6de2ff 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+@mixin block-article {
+  height: auto;
+  padding: $gap-4;
+  margin: $gap-1;
+  flex-basis: calc(33% - 20px);
+  flex-grow: 1;
+  border: 1px solid $bg-main;
+  transition: 1s all ease;
+
+  &:hover {
+    border: 1px solid #6de2ff;
+  }
+
+  @include responsive-desktop {
+    flex-basis: calc(50% - 20px);
+  }
+
+  @include responsive-mobile {
+    flex-basis: calc(100% - 20px);
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

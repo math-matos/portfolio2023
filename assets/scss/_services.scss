@@ -1,0 +1,104 @@
+#s-services {
+  @include spacing-section;
+  background: $bg-secondary;
+
+  .grid-layout {
+    h2 {
+      text-align: center;
+      @include title-section();
+
+      span {
+        color: $color-main;
+      }
+    }
+    
+
+    #services {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      margin: $gap-3 0px;
+
+      article {
+        background: $bg-main;
+        @include block-article;
+        border: 1px solid $bg-border;
+        border-radius: 4px;
+
+        img {
+          width: 70px;
+          height: 100%;
+        }
+
+        h3 {
+          padding: $gap-3 0px;
+          color: $color-black;
+
+          font: {
+            size: 2.4rem;
+            weight: 500;
+          }
+        }
+
+        p {
+          line-height: 3.2rem;
+          color: $color-gray;
+
+          font: {
+            size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#myInput {
+  font-size: 5rem;
+  width: 70%;
+}
+
+.btnEmail {
+  font-size: 3rem;
+  border-radius: 1rem;
+}
