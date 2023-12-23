@@ -2,7 +2,8 @@
   💻<br>Portfólio - Matheus Matos
 </h1>
 
-![image](https://github.com/math-matos/portfolio2023/assets/106177721/af9e7185-9cb2-4eb5-9a0e-83ec2e2eca23)
+![image](https://github.com/math-matos/portfolio2023/assets/106177721/3fb50e35-53ad-4085-82eb-4718fd40b118)
+
 
 
 <h4 align="center"><a href="https://portfolio2023-six-vert.vercel.app/">Visite o portfólio</a></h4>
@@ -16,7 +17,6 @@
 - Tailwind
 - JavaScript;
 - ScrollReveal;
-- SVG Inject;
 
 ---
 
