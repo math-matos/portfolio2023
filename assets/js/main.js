@@ -23,20 +23,23 @@ hoverChangeExperience(
 
 hoverChangeExperience(
   ".freelancer",
-  `Faço alguins trabalhos como freelancer fazendo todo os tipos de projetos 
+  `Faço alguns trabalhos como freelancer fazendo todo os tipos de projetos 
   e automações, desde landing pages até aplicações SaaS. Utilizando: React, Tailwind, NextJs e SQL`,
   "Desenvolvedor de Software",
   "Freelancer",
-  "Jul 2022 - Atualmente (1 ano)"
+  "Jul 2022 - Jan 2023 (7 meses)"
 );
 
 hoverChangeExperience(
-  ".jogador",
-  `Competi profissionalmente em um time de e-Sport por 5 anos, 
-  sendo que 3 foram como capitão do time, dando o exemplo e sendo o mais proativo possivel.`,
-  "Capitão",
-  "Black Dragons",
-  "Jun 2017 - Jan 2022 (5 anos)"
+  ".embraer",
+  `Colaborei ativamente nas análises e controle de dados da engenharia.
+  Otimizei planilhas, sistemas e softwares para eficiência operacional.
+  Facilitei a comunicação entre áreas, apoiando clientes internos.
+  Envolvimento em projetos complexos, promovendo aprimoramento contínuo.
+  Desenvolvi habilidades analíticas e resolução de problemas na engenharia de software.`,
+  "Desenvolvedor de Software",
+  "Embraer",
+  "Jan 2024 - Atualmente"
 );
 
 hoverChangeDescription(
@@ -60,10 +63,6 @@ hoverChangeDescription(
   "React é uma biblioteca JavaScript com foco em criar interfaces de usuário de forma componetizada."
 );
 hoverChangeDescription(
-  ".next",
-  "Next.js é uma estrutura da web que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para web baseados em React."
-);
-hoverChangeDescription(
   ".styled",
   "styled-components é uma biblioteca que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript."
 );
@@ -72,16 +71,8 @@ hoverChangeDescription(
   "Tailwind CSS é um framework CSS que nos fornece classes utilitárias com o propósito de estilizar as páginas."
 );
 hoverChangeDescription(
-  ".typescript",
-  "TypeScript é um superset do JavaScript que incluir recursos que não estão presentes na linguagem de forma nativa, além de torná-la estática."
-);
-hoverChangeDescription(
   ".radix",
   "Radix é uma biblioteca que fornece componentes acessíveis e sem estilos para a criação de aplicação em React."
-);
-hoverChangeDescription(
-  ".cypress",
-  "Cypress é um framework para automação de testes end-to-end, onde atualmente usa a linguagem JavaScript."
 );
 hoverChangeDescription(
   ".node",
