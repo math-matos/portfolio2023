@@ -79,8 +79,8 @@ hoverChangeDescription(
   "Node.js é um ambiente de execução de código JavaScript do lado do servidor."
 );
 hoverChangeDescription(
-  ".python",
-  "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte."
+  ".typescript",
+  "O TypeScript é uma extensão do JavaScript que adiciona tipagem estática ao código, facilitando o desenvolvimento de aplicações mais robustas."
 );
 hoverChangeDescription(
   ".SQL",
