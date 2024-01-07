@@ -20,7 +20,7 @@
 
 ---
 
-<h2>🌹 Autor</h2>
+<h2>🌹 Autores</h2>
 
 <table>
   <tr>
@@ -29,6 +29,17 @@
         <img src="https://avatars.githubusercontent.com/u/106177721" width="100px;" alt="Foto do Matheus Matos no GitHub"/><br>
         <sub>
           <b>Matheus Matos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <a href="https://github.com/iuricode">
+        <img src="https://avatars.githubusercontent.com/u/31936044?v=4" width="100px;" alt="Foto do Matheus Matos no GitHub"/><br>
+        <sub>
+          <b>Iuricode</b>
         </sub>
       </a>
     </td>
